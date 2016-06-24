@@ -9,6 +9,19 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
+    
+    
+    while(1){
+        int inputOfAct ;
+        printf("Input what you want to act\n");
+        scanf("%d",&inputOfAct);
+        switch(inputOfAct){
+            case 99:
+                return 0;
+            default:
+                printf("undefined input, retry\n");
+        }
+    }
     // insert code here...
     FILE  *frendFile = freopen( "/Users/kimmyongjoon/Desktop/lwt/ltw1994/Project/Project/friend.txt", "r" ,stdin);
     
